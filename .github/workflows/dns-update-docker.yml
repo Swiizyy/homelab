@@ -31,7 +31,7 @@ jobs:
       - name: Restart Docker Container
         uses: fifsky/ssh-action@master
         with:
-          user: swiizyy1
+          user: swiizyy
           host: srv-prod-7.home.wbussat.fr
           key: ${{ secrets.SSH_SWIIZYY }}
           command: |

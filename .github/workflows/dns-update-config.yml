@@ -21,7 +21,7 @@ jobs:
       - name: SCP files via ssh key
         uses: appleboy/scp-action@master
         with:
-          username: xcad
+          username: swiizyy
           host: srv-prod-7.home.wbussat.fr
           key: ${{ secrets.SSH_SWIIZYY }}
           source: './config/*'

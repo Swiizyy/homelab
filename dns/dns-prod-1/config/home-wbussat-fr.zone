@@ -1,0 +1,25 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+home.wbussat.fr	IN SOA	ns.home.wbussat.fr. home.wbussat.fr. (
+							2001062618 ; serial
+							3600       ; refresh (1 hour)
+							3600       ; retry (1 hour)
+							2419200    ; expire (4 weeks)
+							3600       ; minimum (1 hour)
+							)
+				IN 	NS 		ns.home.wbussat.fr.
+$ORIGIN home.wbussat.fr.
+ns				A 	192.168.1.19
+fw-prod-1		A 	192.168.1.1
+prx-prod-1		A	192.168.1.4
+srv-prod-1		A 	192.168.1.12
+srv-prod-2		A	192.168.1.13
+srv-prod-7		A	192.168.1.19
+nas-prod-1		A	192.168.1.16
+$ORIGIN srv-prod-1.home.wbussat.fr.
+*				A	192.168.1.12
+$ORIGIN srv-prod-2.home.wbussat.fr.
+*				A	192.168.1.13
+$ORIGIN srv-prod-7.home.wbussat.fr.
+*				A	192.168.1.19
+

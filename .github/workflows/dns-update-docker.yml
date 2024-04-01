@@ -25,13 +25,13 @@ jobs:
           host: srv-prod-7.home.wbussat.fr
           key: ${{ secrets.SSH_SWIIZYY }}
           source: './dns/dns-prod-1/docker-compose.yaml'
-          target: '/home/swiizy/dns-prod-1/'
+          target: '/home/swiizyy/dns-prod-1/'
           strip_components: 3
 
       - name: Restart Docker Container
         uses: fifsky/ssh-action@master
         with:
-          user: swiizyy
+          user: swiizyy1
           host: srv-prod-7.home.wbussat.fr
           key: ${{ secrets.SSH_SWIIZYY }}
           command: |

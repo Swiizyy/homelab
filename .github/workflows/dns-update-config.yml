@@ -1,4 +1,4 @@
-uname: Update Config Files
+name: Update Config Files
 
 on:
   push:

@@ -24,7 +24,7 @@ jobs:
           username: swiizyy
           host: srv-prod-7.home.wbussat.fr
           key: ${{ secrets.SSH_SWIIZYY }}
-          source: './config/*'
+          source: './dns/dns-prod-1/config/*'
           target: '/home/swiizyy/dns-prod-1/'
           overwrite: true
 
